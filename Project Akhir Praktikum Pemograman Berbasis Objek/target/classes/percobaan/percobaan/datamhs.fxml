@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="433.0" prefWidth="394.0" style="-fx-background-color: #A8BF84;" vgap="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="percobaan.percobaan.controller2">
+    <Label alignment="BASELINE_RIGHT"  prefHeight="25.0" prefWidth="378.0" text="INPUTAN PENJUALAN" textFill="#027333" GridPane.columnIndex="5" GridPane.rowIndex="3">
+        <font>
+            <Font size="23.0" />
+        </font></Label>
+
+    <!--NIM-->
+    <HBox GridPane.columnIndex="5" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="6" >
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+        <Label text="Nama Poduct" textFill="#027333"  />
+    </HBox>
+
+    <!--Nama-->
+    <VBox GridPane.columnIndex="5" GridPane.rowIndex="8">
+        <Label text="Quantity" textFill="#027333" />
+    </VBox>
+    <!--Alamat-->
+    <VBox GridPane.columnIndex="5" GridPane.rowIndex="24" />
+
+    <!--tombol-->
+    <Button fx:id="btnsubmit" onAction="#onButton" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #FFA500;" text="SUBMIT" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.columnSpan="4" GridPane.rowIndex="14" />
+
+    <!--Tabel-->
+    <TableView fx:id="tvDataMahasiswa" maxHeight="1" GridPane.columnIndex="5" GridPane.rowIndex="16" minHeight="70" >
+        <!--membuat colom-->
+        <columns>
+            <TableColumn text="Nama Produk">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nim" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="QTY">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nama" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Total Pembayaran">
+                <cellValueFactory>
+                    <PropertyValueFactory property="alamat" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <HBox spacing="20" alignment="BASELINE_RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="18">
+        <Button fx:id="btnload" onAction="#onButton" style="-fx-background-color: #027333;" text="LOAD DATA" textFill="FFFFFF" textAlignment="CENTER" />
+      <Button fx:id="btnlogout" onAction="#userLogOut" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #E33322;" text="LOGOUT" textFill="FFFFFF" textAlignment="CENTER" />
+    </HBox>
+    <TextField fx:id="tfalamat" focusTraversable="false" promptText="Masukan Total Pembayaran" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+    <TextField fx:id="tfnama" focusTraversable="false" prefHeight="48.0" prefWidth="294.0" promptText="Masukan Qty" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+    <TextField fx:id="tfnim" focusTraversable="false" promptText="Masukan Nama Produk" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+    <Label text="Total Pembayaran" textFill="#027333" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

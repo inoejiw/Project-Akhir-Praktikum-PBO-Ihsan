@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="683.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="percobaan.percobaan.HelloController">
+  <left>
+    <AnchorPane prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+      <children>
+        <ImageView fitHeight="150.0" fitWidth="500.0" layoutY="125.0" layoutX="75" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@image/kkp.png" />
+          </image>
+        </ImageView>
+          <Label layoutY="290.0" layoutX="50" text="Kios Kelapa Pasuhe" textFill="#027333">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Label>
+          <Label layoutY="450.0" layoutX="15" text="© Copyright 2024 KZ Food Group - All rights reserved." textFill="#027333">
+              <font>
+                  <Font size="11.0" />
+              </font>
+          </Label>
+      </children>
+    </AnchorPane>
+  </left>
+  <center>
+    <AnchorPane prefHeight="400.0" prefWidth="335.0" style="-fx-background-color: #A8BF84;" BorderPane.alignment="CENTER">
+      <children>
+        <ImageView fitHeight="144.0" fitWidth="162.0" layoutX="175.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+          </image>
+        </ImageView>
+          <Label layoutX="105.0" layoutY="94.0" text="ADMIN LOGIN" textFill="#027333">
+              <font>
+                  <Font size="30.0" />
+              </font>
+          </Label>
+          <Label layoutX="90.0" layoutY="129.0" text="WELCOME TO KZ FOOD GROUP FINANCE SYSTEM" textFill="#027333">
+              <font>
+                  <Font size="10.0" />
+              </font>
+          </Label>
+        <Label layoutX="165.0" layoutY="190.0" text="Username" textFill="#027333">
+          <font>
+            <Font size="17.0" />
+          </font>
+        </Label>
+        <Label layoutX="165.0" layoutY="275.0" text="Password" textFill="#027333">
+               <font>
+                  <Font size="17.0" />
+               </font>
+        </Label>
+        <TextField fx:id="username" layoutX="100.0" layoutY="220.0" prefHeight="29.0" prefWidth="203.0" promptText="Username" />
+        <PasswordField fx:id="password" layoutX="100.0" layoutY="305.0" prefHeight="32.0" prefWidth="203.0" promptText="Password" />
+        <Button fx:id="login" layoutX="90.0" layoutY="365.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" text="LOGIN">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+        <Label fx:id="wrongLogIn" layoutX="115.0" layoutY="157.0" textFill="RED" />
+            <Button fx:id="cancelbtn" layoutX="215.0" layoutY="365.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" text="CANCEL">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>
